@@ -1,0 +1,78 @@
+[
+  {
+    "emp_id": "E101",
+    "name": "Mani Talari",
+    "department": "IT",
+    "salary": 40000,
+    "designation": "Software Engineer",
+    "location": "Hyderabad",
+    "dob": "1998-06-15",
+    "projects": [
+      {
+        "project_id": "P001",
+        "name": "Inventory Management System",
+        "status": "In Progress"
+      }
+    ]
+  },
+  {
+    "emp_id": "E102",
+    "name": "Ravi Kumar",
+    "department": "Finance",
+    "salary": 35000,
+    "designation": "Senior Analyst",
+    "location": "Bangalore",
+    "dob": "1995-09-21",
+    "projects": [
+      {
+        "project_id": "P005",
+        "name": "Billing Automation",
+        "status": "Planning"
+      },
+      {
+        "project_id": "P004",
+        "name": "Audit Dashboard",
+        "status": "Completed"
+      }
+    ]
+  },
+  {
+    "emp_id": "E103",
+    "name": "Sai Kumar",
+    "department": "Account",
+    "salary": 72000,
+    "designation": "Junior Analyst",
+    "location": "Bangalore",
+    "dob": "1999-08-21",
+    "projects": []
+  },
+  {
+    
+    "emp_id": "E105",
+    "name": "Kalyan Kumar",
+    "department": "Account",
+    "salary": 30000,
+    "designation": "Junior Analyst",
+    "location": "Bangalore",
+    "dob": "1999-08-24",
+    "projects": []
+  
+  },
+  {
+    "emp_id": "E107",
+    "name": "Vasavi",
+    "department": "IT",
+    "salary": 40000,
+    "designation": "Software Engineer",
+    "location": "Hyderabad",
+    "dob": "1998-06-15",
+    "projects": [
+      {
+        "project_id": "P005",
+        "name": "Inventory Management System",
+        "status": "Active"
+      }
+    ]
+  }
+
+]
