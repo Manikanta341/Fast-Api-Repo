@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function add(a,b)
+        {
+            return a+b
+        }
+        function square(a)
+        {
+            return a*a
+        }
+       let s= square(9)
+       console.log(add(1,s))
+
+       function greet(name,fun)
+       {
+            console.log("Hello "+name)
+            fun()
+        
+       }
+       function sayGoodBye()
+       {
+        console.log("Bye.....")
+       }
+       greet("Kavya",sayGoodBye)
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <button id="btn">click</button>
+    <script>
+        btn = document.getElementById("btn")
+        btn.onclick=ClickBtn
+        function ClickBtn()
+        {
+            let header=document.createElement("h2")
+            header.innerText="Welcome to html";
+            document.body.appendChild(header);
+        }
+    
+    </script>
+</body>
+</html>

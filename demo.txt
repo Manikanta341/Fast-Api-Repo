@@ -1,0 +1,2 @@
+Asynchronous JavaScript And XML
+Ajax call used to get data from server with out reloading the web page completely only particular part will be reloading

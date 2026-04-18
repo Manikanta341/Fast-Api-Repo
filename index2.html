@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!---- <script  defer src="script1.js"></script>
+    <script src="script2.js"></script>
+-->
+</head>
+<body>
+    <h2>Async & Defer attributes</h2>
+    <script>
+        function outer()
+        {
+            var x=10;
+            function inner()
+            {
+                var y=20;
+                console.log(x+y)
+            }
+            return inner
+        }
+        var value=outer()
+        value()
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person
+        {
+            constructor(n,a)
+            {
+                this.name=n
+                this.age =a
+            }
+            getPersonDetails()
+            {
+                console.log("Name is "+this.name,"age is "+this.age)
+            }
+
+        }
+        class Employee extends Person
+        {
+            constructor(n,a,s,l)
+            {
+                super(n,a)
+                this.salary=s
+                this.location=l
+            }
+            getEmployeeDetails()
+            {
+                console.log("Salary is "+this.salary,"Location is "+this.location)
+            }
+          
+            getCompleteDetails()
+            {
+                console.log("Name is "+this.name,"age is "+this.age,"Salary is "+this.salary,"Location is "+this.location)
+            }
+        }
+        let p = new Person("Lakshmi",25)
+        let e = new Employee(p.name,p.age,30000,"Agra")
+        p.getPersonDetails()
+        e.getEmployeeDetails()
+        console.log("====================")
+        e.getCompleteDetails()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(n,a,s)
+            {
+                this.name=n
+                this.age=a
+                this.salary=s
+            }
+            set nameSet(uname)
+            {
+                this.name=uname
+            }
+            set ageSet(user_age)
+            {
+                this.age=user_age
+            }
+            set salarySet(user_salary)
+            {
+                this.salary=user_salary
+            }
+
+            get getName()
+            {
+                return "name is: "+this.name
+            }
+            get getAge()
+            {
+                return "Age is: "+this.age
+            }
+            get getSalary()
+            {
+                return "Salary is: "+this.salary
+            }
+            userInfo()
+            {
+            console.log("welcome to user info method")
+           }
+
+        }
+        
+        let p = new Person()
+        p.nameSet="Manikanata"
+        p.ageSet=28
+        p.salarySet=25000
+        console.log(p)
+        console.log("==========================")
+        console.log(p.getName)
+        console.log(p.getAge)
+        console.log(p.getSalary)
+        p.userInfo()
+    </script>
+</body>
+</html>

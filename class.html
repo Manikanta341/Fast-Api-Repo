@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person
+        {
+            constructor(n,a,s)
+            {
+                this.name=n
+                this.age=a
+                this.salary=s
+            }
+            updateName(uname)
+            {
+                this.name=uname
+            }
+
+        }
+        let p=new Person("Mani",29,25000)
+        console.log(p)
+        p.updateName("Lakshmi")
+        console.log(p)
+        
+    </script>
+</body>
+</html>

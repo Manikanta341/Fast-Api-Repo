@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Call with API</title>
+</head>
+<style></style>
+<body>
+    <input type="text" id="special"><br>
+    <button type="submit" value="getData" id="btn">getData</button>
+    <div class="container" id="demo"></div>
+
+   <script>
+        
+        btn = document.getElementById("btn")
+        demo = document.getElementById("demo")
+        btn.addEventListener('click',loadData)
+        function loadData()
+        {
+            country = document.getElementById("special").value
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET',`https://restcountries.com/v3.1/name/${country}`,true);
+            xhr.send();
+            xhr.onprogress=function()
+            {
+                demo.innerText='progress.....  '
+            };
+            xhr.onload = function()
+            {   
+            if(xhr.status==200)
+            {
+                 let result = xhr.responseText
+                 let json_data = JSON.parse(result)
+                 let [country_info]=json_data
+                 console.log(json_data);
+                 demo.innerText=`<img src=${country_info.flags.png} width=50% height=50%>`;
+            }
+        };
+        xhr.onerror=function()
+        {
+           demo.innerText="File Not Found"
+        };
+        }
+   </script> 
+</body>
+</html>

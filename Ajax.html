@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Call</title>
+    
+</head>
+<style>
+    #demo{
+        text-align:center;
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <input type="submit" class="button" value="getdata" id="but">
+
+    <div class="container" id="demo">
+        before loading data
+    </div>
+
+    <script>
+        let  button = document.getElementById("but")
+        let demo =  document.getElementById("demo")
+        
+        button.addEventListener('click',AjaxData)
+    function AjaxData() {
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', 'demo.txt', true);
+    xhr.send();
+
+    xhr.onprogress = function() {
+        demo.innerText = 'Loading...';
+    };
+
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            demo.innerText = xhr.responseText;
+        } else {
+            demo.innerText = "Failed to load data";
+        }
+    };
+
+    xhr.onerror = function() {
+        demo.innerText = "Error loading file!";
+    };
+}
+
+        
+
+    </script>
+</body>
+
+</html>
